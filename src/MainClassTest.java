@@ -14,4 +14,5 @@ public class MainClassTest extends MainClass{
         int testNumber = super.getClassNumber();
         Assert.assertTrue(String.format("Class number %s is less than 45", testNumber), testNumber >= max);
     }
+
 }
