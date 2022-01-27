@@ -15,4 +15,14 @@ public class MainClassTest extends MainClass{
         Assert.assertTrue(String.format("Class number %s is less than 45", testNumber), testNumber >= max);
     }
 
+    @Test
+    public void testGetClassString() {
+        String testString = super.getClassString();
+        String substring1 = "Hello";
+        String substring2 = "hello";
+
+        Assert.assertTrue("Test string does not contain \"Hello\" or \"hello\" substring",
+                testString.contains(substring1) || testString.contains(substring2));
+    }
+
 }
